@@ -42,11 +42,21 @@ body {
     background: url('point.png') no-repeat center/cover;
     position: absolute;
     cursor: pointer;
+    transition: all 0.9ms ease;
 }
 
-#marker1 { top: 250px; left: 940px; }
-#marker2 { top: 555px; left: 940px; }
-#marker3 { top: 550px; left: 1800px; }
+.marker:hover {
+    transform: scale(1.4);
+    transition: all 0.9ms ease;
+}
+
+#marker1 { top: 255px; left: 930px; }
+#marker2 { top: 555px; left: 930px; }
+#marker3 { top: 312px; left: 942px; }
+#marker4 { top: 255px; left: 930px; }
+#marker5 { top: 555px; left: 930px; }
+#marker6 { top: 550px; left: 1800px; }
+
 
 .legend-popup {
     position: absolute;
@@ -58,8 +68,8 @@ body {
     border-radius: 10px;
     font-size: 18px;
     display: none;
-    width: 250px;
-    height: 385px;
+    width: 260px;
+    height: 500px;
     max-height: 500px;
     overflow-y: auto;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
@@ -93,6 +103,8 @@ body {
     opacity: 100%;
     width: 100%;
     height: auto;
+    max-width: 200px;
+    max-height: 300px;
     border-radius: 10px;
     margin-bottom: 15px;
     position: relative;  /* Positionner tous les éléments enfants */
