@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Spacethink;
+    src:url(aftersickdemo-regular.otf) ;
+    font-weight: auto;
+}
+
+@font-face {
+    font-family: Darker;
+    src: url(DarkerGrotesque-VariableFont_wght.ttf) ;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+}
+
+.marker {
+    width: 20px;
+    height: 20px;
+    background: url('point.png') no-repeat center/cover;
+    position: absolute;
+    cursor: pointer;
+}
+
+#marker1 { top: 250px; left: 940px; }
+#marker2 { top: 555px; left: 940px; }
+#marker3 { top: 550px; left: 1800px; }
+
+.legend-popup {
+    position: absolute;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 90%;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    display: none;
+    width: 250px;
+    height: 385px;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    
+}
+
+.legend-popup h2 {
+    font-family: Spacethink;
+    font-weight: 50;
+    font-size: 35px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.legend-popup > * {
+    position: relative;  /* Positionner tous les éléments enfants */
+    top: -20px;  /* Décaler chaque élément de 20px vers le haut */
+}
+
+.legend-popup p {
+    font-family: Darker;
+    font-size: 16px;
+    position: relative;  /* Positionner tous les éléments enfants */
+    top: -30px;  /* Décaler chaque élément de 20px vers le haut */
+    
+}
+
+.legend-image {
+    opacity: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;  /* Positionner tous les éléments enfants */
+    top: -30px;  /* Décaler chaque élément de 20px vers le haut */
+}
+
+.close-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;  /* Positionner tous les éléments enfants */
+    top: -30px;  /* Décaler chaque élément de 20px vers le haut */
+}
+
+.close-btn:hover {
+    background-color: #292929;
+}
