@@ -1,44 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas des Légendes Urbaines</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas des Légendes Urbaines</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="map-container">
-        <img src="earth.png" alt="Carte des Légendes Urbaines" class="map" id="map">
-        
-        <!-- Marqueurs -->
-        <div class="marker" id="marker1" data-legend="legend1"></div>
-        <div class="marker" id="marker2" data-legend="legend2"></div>
-        <div class="marker" id="marker3" data-legend="legend3"></div>
-        
-    </div>
+  <div class="map-container">
+    <img src="earth.png" alt="Carte des Légendes Urbaines" class="map" id="map">
+    <!-- Marqueurs principaux -->
+    <div class="marker" id="marker1" data-legend="legend1" style="top: 305px; left: 960px; background: url('france.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker2" data-legend="legend2" style="top: 360px; left: 925px; background: url('espagne.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker3" data-legend="legend3" style="top: 360px; left: 898px; background: url('portugal.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker4" data-legend="legend4" style="top: 382px; left: 1682px; background: url('japon.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker5" data-legend="legend5" style="top: 360px; left: 340px; background: url('usa.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker6" data-legend="legend6" style="top: 470px; left: 410px; background: url('Mexique.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker7" data-legend="legend7" style="top: 270px; left: 905px; background: url('irlande.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker8" data-legend="legend8" style="top: 520px; left: 1600px; background: url('philippines.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker9" data-legend="legend9" style="top: 705px; left: 1035px; background: url('namibie.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker10" data-legend="legend10" style="top: 405px; left: 910px; background: url('maroc.png') no-repeat center/cover;"></div>
+    <div class="marker" id="marker11" data-legend="legend11" style="top: 260px; left: 935px; background: url('royaumeuni.png') no-repeat center/cover;"></div>
 
-    <!-- Légendes -->
-    <div id="legend1" class="legend-popup">
-        <h2>MONSTRE DU LOCH NESS</h2>
-        <p>Le monstre du Loch Ness, surnommé Nessie, est une créature légendaire censée vivre dans le lac Loch Ness en Écosse.</p>
-        <img src="loch ness.jpg" alt="Image légende" class="legend-image">
-        <button class="close-btn" onclick="closePopup('legend1')">Fermer</button>
-    </div>
 
-    <div id="legend2" class="legend-popup">
-        <h2>ANANSI</h2>
-        <p>Anansi, l'araignée rusée, est un dieu mythologique d'Afrique de l'Ouest, symbolisant la sagesse et la ruse.</p>
-        <img src="anansi.png" alt="Image légende" class="legend-image">
-        <button class="close-btn" onclick="closePopup('legend2')">Fermer</button>
-    </div>
 
-    <div id="legend3" class="legend-popup">
-        <h2>La Dame Blanche</h2>
-        <p>La Dame Blanche est un esprit de femme en robe blanche, souvent vue sur les routes, annonçant des tragédies.</p>
-        <img src="dame blanche.jpg" alt="Image légende" class="legend-image">
-        <button class="close-btn" onclick="closePopup('legend3')">Fermer</button>
-    </div>
-
-    <script src="script.js"></script>
+    <div id="secondary-legend-container"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
